@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoes - CHIRANJEEVI Store</title>
+  <link rel="stylesheet" href="dyweb.css">
+</head>
+<body>
+
+
+  <!-- Marquee -->
+  <marquee scrollamount="12" class="marquee">
+    <h1> "SHOE OFFERS"!  &nbsp;&nbsp;&nbsp; 60% Offer on Above ₹299!</h1>
+  </marquee>
+
+  <div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search for mobiles, shoes, bikes, homes, men...">
+  <button id="searchBtn">Search</button>
+</div>
+   
+
+
+  <center>
+
+    <!-- Heading -->
+    <h1>SHOE COLLECTION</h1>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="top-bar"></div>
+      <a href="index.html">MENU</a>
+      <a href="men.html">MEN</a>
+      <a href="bikes.html">BIKES</a>
+      <a href="mobiles.html">MOBILES</a>
+      <a href="shoe.html">SHOE</a>
+      <a href="house.html">HOMES</a>
+      <a href="cart.html">CART ADDEDITEMS</a>
+      <a href="luxe.html"><button class="luxe-btn">LUXE</button></a>
+      
+
+
+
+    <!-- Cart Display -->
+    <div class="cart-display">
+      🛒 Cart: <span id="cart-count">0</span> items
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+
+      <div class="product-card" data-name="White Sneakers">
+        <img src="assets/shoe1.jpeg" alt="White Sneakers">
+        <h3 class="product-title"> White Sneakers</h3>
+        <p>₹1,799 </p>
+        <center>
+          <span class="strike">₹2,499</span>
+        </center>
+        <button class="add-btn">Add to Cart</button>
+        <button class="discard-btn">Discard</button>
+      </div>
+
+      <div class="product-card" data-name="Running Shoes">
+        <img src="assets/shoe2.jpeg" alt="Running Shoes">
+        <h3 class="product-title"> Running Shoes</h3>
+        <p>₹2,299 </p>
+        <center>
+          <span class="strike">₹3,199</span>
+        </center>
+        <button class="add-btn">Add to Cart</button>
+        <button class="discard-btn">Discard</button>
+      </div>
+
+      <div class="product-card" data-name="Loafers White">
+        <img src="assets/shoe3.jpeg" alt="Loafers White">
+        <h3 class="product-title"> Loafers White</h3>
+        <p>₹1,299 </p>
+        <center>
+          <span class="strike">₹1,999</span>
+        </center>
+        <button class="add-btn">Add to Cart</button>
+        <button class="discard-btn">Discard</button>
+      </div>
+
+      <div class="product-card" data-name="Formals">
+        <img src="assets/shoe4.jpeg" alt="Formals">
+        <h3 class="product-title"> Formals</h3>
+        <p>₹1,299 </p>
+        <center>
+          <span class="strike">₹1,999</span>
+        </center>
+        <button class="add-btn">Add to Cart</button>
+        <button class="discard-btn">Discard</button>
+      </div>
+
+    </div>
+
+    <!-- Back Button -->
+    <div style="margin-top: 20px;">
+        <a href="index.html"><button>⬅ Back</button></a>
+    </div>
+
+  </center>
+
+  <!-- Display Cart Items -->
+  <div id="cart-items" style="margin: 20px; text-align: left;"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

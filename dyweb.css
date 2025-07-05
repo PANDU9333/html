@@ -1,0 +1,253 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #443838; /* Soft reddish background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+  margin: 20px 0;
+  color: #9006c6;
+  text-align: center;
+}
+
+/* Navigation */
+nav.main-nav {
+  background-color: #222;
+  padding: 12px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav.main-nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px;
+}
+
+nav.main-nav a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.marquee {
+  margin: 10px 0;
+  background-color: #b1d8dc;   /* Deep purple background */
+  padding: 12px 0;
+  font-size: 20px;
+  color: #e70e0e;              /* White text */
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.search-bar button {
+  padding: 10px 14px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart Display */
+.cart-display {
+  text-align: center;
+  padding: 10px;
+  background-color: #dedede;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 12px 0 6px;
+  font-size: 18px;
+  color: #111;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+button.add-btn:hover {
+  background-color: #218838;
+}
+
+button.discard-btn {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 5px;
+}
+
+button.discard-btn:hover {
+  background-color: #c82333;
+}
+
+/* Cart Items */
+#cart-items {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+#cart-items div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+#cart-items div:hover {
+  background-color: #e7f5ff;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Back Button */
+a button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+a button:hover {
+  background-color: #495057;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 80%;
+  }
+
+  nav.main-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
